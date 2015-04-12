@@ -66,7 +66,7 @@ abstract class Controller {
 
     protected function forward404()
     {
-        throw new HttpNotFoundException('ForWaded 404 page from '
+        throw new HttpNotFoundException('ForWarded 404 page from '
         . $this->controller_name . '/'. $this->action_name);
     }
 
