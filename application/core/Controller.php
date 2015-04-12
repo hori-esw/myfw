@@ -66,7 +66,7 @@ abstract class Controller {
 
     protected function forward404()
     {
-        throw new HttpNotFoundException('ForWarded 404 page from '
+        throw new HttpNotFoundException('Forwarded 404 page from '
         . $this->controller_name . '/'. $this->action_name);
     }
 
@@ -86,7 +86,7 @@ abstract class Controller {
 
     protected function generateCsrfToken($form_name)
     {
-        $key = 'scrf_tokens/'.$form_name;
+        $key = 'csrf_tokens/'.$form_name;
         $tokens = $this->session->get($key,array());
         if (count($tokens) >= 10) {
             array_shift($tokens);
