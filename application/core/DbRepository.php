@@ -30,11 +30,11 @@ class DbRepository
 
     public function fetch($sql, $params = array())
     {
-        return $this->exectute($sql, $params)->fetch(PDO::FETCH_ASSOC);
+        return $this->execute($sql, $params)->fetch(PDO::FETCH_ASSOC);
     }
 
     public function fetchAll($sql, $params = array())
     {
-        return $this->exectute($sql, $params)->fetchAll(PDO::FETCH_ASSOC);
+        return $this->execute($sql, $params)->fetchAll(PDO::FETCH_ASSOC);
     }
 }
