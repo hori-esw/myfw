@@ -12,10 +12,10 @@ class Session {
 
     public function __construct()
     {
-        if (!self::$sessionStartd){
+        if (!self::$sessionStarted){
             session_start();
 
-            self::$settionStarted = true;
+            self::$sessionStarted = true;
         }
     }
 
