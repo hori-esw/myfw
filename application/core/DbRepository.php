@@ -20,7 +20,7 @@ class DbRepository
         $this->con = $con;
     }
 
-    public function exectute($sql, $params = array())
+    public function execute($sql, $params = array())
     {
         $stmt = $this->con->prepare($sql);
         $stmt->execute($params);
