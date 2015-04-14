@@ -60,6 +60,6 @@ class Session {
 
     public function isAuthenticated()
     {
-        return $this->get('_autenticated', false);
+        return $this->get('_authenticated', false);
     }
 }
